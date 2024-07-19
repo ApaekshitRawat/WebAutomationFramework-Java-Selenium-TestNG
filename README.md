@@ -1,28 +1,51 @@
+
 # WebAutomationFramework-Java-Selenium-TestNG
-o(*￣︶￣*)o 
+
+o(*￣︶￣*)o
+
+## Getting Started
+
+These instructions will help you set up and run the tests in this automation framework.
+
+### Prerequisites
+
+- Java
+- Maven
+- Selenium WebDriver
+- TestNG
+
+### Installation
+
+To install the framework, navigate to the project directory and run one of the following commands:
+
+```bash
+mvn clean install
+or
+mvn install
 
 
-// These are the commands to run tests in terminal
-(Note: cd to the project first)
-To install the framework use - 
-mvn clean install 
-or 
-mvn install 
+Running All Tests
+To run all tests ending with "test":
+mvn test
 
-
-
-To run all the tests ending with test -
-mvn test 
-
-
-
-To run the test as per the profile set in the pom.xml 
+Running Tests by Profile
+To run tests according to the profiles set in pom.xml:
 mvn test -PRegression
 mvn test -PPurchase
 mvn test -PErrorValidation
 
+Running Tests in Eclipse IDE
+If you prefer not to use the terminal, you can simply run the TestNG XML files located in the TestSuites directory of your Eclipse project.
+Built With
+
+Java - The programming language used
+Selenium WebDriver - The web framework used for automation
+TestNG - Testing framework
+Maven - Dependency Management
+
+Authors
+
+Apaekshit Rawat
 
 
 
-
-// In the eclipse ide , simply run the testNg xml files inside the TestSuites directory if you dont want to use the terminal

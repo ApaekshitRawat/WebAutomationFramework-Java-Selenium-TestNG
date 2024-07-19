@@ -10,10 +10,12 @@ import java.util.List;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -37,11 +39,17 @@ public class BaseTest {
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\java\\resources\\GlobalData.properties");
 		// Now the value fis can be passed as an input stream to load function.
 		prop.load(fis);
-		String browserNameString = prop.getProperty("browser");
+		 
+		String browserNameString = System.getProperty("browser")!= null ? System.getProperty("browser") : prop.getProperty("browser") ;
+		//prop.getProperty("browser");
 		
-		if(browserNameString.equalsIgnoreCase("chrome")) {
-			
-			 driver = new ChromeDriver();
+		if(browserNameString.contains("Chrome")) {
+			ChromeOptions options = new ChromeOptions();
+			if(browserNameString.contains("Headless")) {
+				options.addArguments("headless");
+			}
+			 driver = new ChromeDriver(options);
+			 driver.manage().window().setSize(new Dimension(1440,900)); // full screen for headless mode
 					
 		}
 		else if(browserNameString.equalsIgnoreCase("firefox")){

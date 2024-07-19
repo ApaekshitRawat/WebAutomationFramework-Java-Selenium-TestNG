@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-07-19T15:44:17 IST" name="Suite" finished-at="2024-07-19T15:44:25 IST" duration-ms="8376">
+    <groups>
+      <group name="errorHandling">
+        <method signature="ErrorValidation.errorValidation()[pri:0, instance:Apaekshit_Autoamtion.AutomationEnterpriseLevelFramework.ErrorValidation@446a1e84]" name="errorValidation" class="Apaekshit_Autoamtion.AutomationEnterpriseLevelFramework.ErrorValidation"/>
+        <method signature="ErrorValidation.productErrorValidation()[pri:0, instance:Apaekshit_Autoamtion.AutomationEnterpriseLevelFramework.ErrorValidation@446a1e84]" name="productErrorValidation" class="Apaekshit_Autoamtion.AutomationEnterpriseLevelFramework.ErrorValidation"/>
+      </group> <!-- errorHandling -->
+    </groups>
+    <test started-at="2024-07-19T15:44:17 IST" name="Submit Order" finished-at="2024-07-19T15:44:17 IST" duration-ms="12">
+    </test> <!-- Submit Order -->
+    <test started-at="2024-07-19T15:44:17 IST" name="Error Validation" finished-at="2024-07-19T15:44:25 IST" duration-ms="8376">
+      <class name="Apaekshit_Autoamtion.AutomationEnterpriseLevelFramework.ErrorValidation">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Apaekshit_Autoamtion.AutomationEnterpriseLevelFramework.ErrorValidation@446a1e84]" started-at="2024-07-19T15:44:17 IST" name="launchApplication" finished-at="2024-07-19T15:44:19 IST" duration-ms="2540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="errorValidation()[pri:0, instance:Apaekshit_Autoamtion.AutomationEnterpriseLevelFramework.ErrorValidation@446a1e84]" started-at="2024-07-19T15:44:19 IST" name="errorValidation" finished-at="2024-07-19T15:44:20 IST" duration-ms="519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- errorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Apaekshit_Autoamtion.AutomationEnterpriseLevelFramework.ErrorValidation@446a1e84]" started-at="2024-07-19T15:44:20 IST" name="tearDown" finished-at="2024-07-19T15:44:20 IST" duration-ms="107" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Apaekshit_Autoamtion.AutomationEnterpriseLevelFramework.ErrorValidation@446a1e84]" started-at="2024-07-19T15:44:20 IST" name="launchApplication" finished-at="2024-07-19T15:44:24 IST" duration-ms="4014" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="productErrorValidation()[pri:0, instance:Apaekshit_Autoamtion.AutomationEnterpriseLevelFramework.ErrorValidation@446a1e84]" started-at="2024-07-19T15:44:24 IST" name="productErrorValidation" finished-at="2024-07-19T15:44:25 IST" duration-ms="1053" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Apaekshit_Autoamtion.AutomationEnterpriseLevelFramework.ErrorValidation@446a1e84]" started-at="2024-07-19T15:44:25 IST" name="tearDown" finished-at="2024-07-19T15:44:25 IST" duration-ms="85" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Apaekshit_Autoamtion.AutomationEnterpriseLevelFramework.ErrorValidation -->
+    </test> <!-- Error Validation -->
+  </suite> <!-- Suite -->
+</testng-results>

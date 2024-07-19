@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+	<groups>
+		<run>
+			<include name="Purchase"></include>
+		</run>
+	</groups>
+	
+  <test thread-count="2" name="Submit Order">
+    <classes>
+      <class name="Apaekshit_Autoamtion.AutomationEnterpriseLevelFramework.SubmitOrderTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="2" name="Error Validation">
+    <classes>
+   
+      <class name="Apaekshit_Autoamtion.AutomationEnterpriseLevelFramework.ErrorValidation"/>
+    </classes>
+  </test> <!-- Test --><listeners>
+	<listener class-name="testComponents.Listeners"></listener></listeners>
+</suite> <!-- Suite -->

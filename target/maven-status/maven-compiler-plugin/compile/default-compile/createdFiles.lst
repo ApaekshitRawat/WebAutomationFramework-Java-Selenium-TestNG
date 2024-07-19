@@ -1,0 +1,8 @@
+pageObjects\SummaryPage.class
+pageObjects\CataloguePage.class
+pageObjects\LandingPage.class
+pageObjects\CheckOut.class
+resources\ExtentReporterNg.class
+pageObjects\CartPage.class
+pageObjects\OrderPage.class
+utils\AbstractMethods.class

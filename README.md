@@ -22,18 +22,25 @@ To install the framework, navigate to the project directory and run one of the f
 mvn clean install
 or
 mvn install
-
-
+```
 Running All Tests
 To run all tests ending with "test":
+```bash
 mvn test
-
+```
 Running Tests by Profile
 To run tests according to the profiles set in pom.xml:
+```bash
 mvn test -PRegression
 mvn test -PPurchase
 mvn test -PErrorValidation
-
+```
+To Run Tests in different browsers (default is chrome)
+```bash
+mvn test -PRegression -Dbrowser=Firefox
+mvn test -PRegression -Dbrowser=Edge
+mvn test -PRegression -Dbrowser=Chrome
+```
 Running Tests in Eclipse IDE
 If you prefer not to use the terminal, you can simply run the TestNG XML files located in the TestSuites directory of your Eclipse project.
 Built With

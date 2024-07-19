@@ -40,6 +40,7 @@ To Run Tests in different browsers (default is chrome)
 mvn test -PRegression -Dbrowser=Firefox
 mvn test -PRegression -Dbrowser=Edge
 mvn test -PRegression -Dbrowser=Chrome
+mvn test -PRegression -Dbrowser=ChromeHeadless
 ```
 Running Tests in Eclipse IDE
 If you prefer not to use the terminal, you can simply run the TestNG XML files located in the TestSuites directory of your Eclipse project.
